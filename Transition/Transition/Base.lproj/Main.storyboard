@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MaM-MK-MAc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="action" id="kmK-PI-nRF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="M8t-kl-Npi"/>
+                        <barButtonItem systemItem="add" id="QZ2-e9-y66">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="hct-uu-Nve" kind="presentation" modalPresentationStyle="overFullScreen" id="hBG-yK-cF2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9Zx-LP-UCQ"/>
+                        <barButtonItem systemItem="refresh" id="Nis-YX-xpa">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="R7e-3t-z37"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="37"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="bSj-pN-Ls7">
+            <objects>
+                <viewController id="hct-uu-Nve" customClass="MenuVC" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jh2-ys-hQN"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAR-5q-mkr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DZ7-DT-QYL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY5-8q-jtO">
+                                <rect key="frame" x="0.0" y="612" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CTb-hK-ucn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnAction:" destination="hct-uu-Nve" eventType="touchUpInside" id="FJa-AK-bKt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="business_car" translatesAutoresizingMaskIntoConstraints="NO" id="pUV-Xq-188">
+                                <rect key="frame" x="76" y="132.5" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="Dwl-a6-9ml"/>
+                                    <constraint firstAttribute="width" constant="83" id="pbF-ub-bhp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商务专车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-Xh-Uuh">
+                                <rect key="frame" x="83" y="226.5" width="69.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taxi" translatesAutoresizingMaskIntoConstraints="NO" id="OVf-aG-bwk">
+                                <rect key="frame" x="216" y="132.5" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="YCZ-Xa-lAn"/>
+                                    <constraint firstAttribute="height" constant="94" id="bDs-iR-0ug"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出租车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooN-p2-KnN">
+                                <rect key="frame" x="231.5" y="226.5" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel_car" translatesAutoresizingMaskIntoConstraints="NO" id="Qhl-co-OBl">
+                                <rect key="frame" x="76" y="267" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="0Wn-Xk-hRB"/>
+                                    <constraint firstAttribute="width" constant="83" id="pnX-95-qJc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公交车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbo-Nx-hok">
+                                <rect key="frame" x="92" y="361" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel_around" translatesAutoresizingMaskIntoConstraints="NO" id="irV-1b-8QP">
+                                <rect key="frame" x="216" y="267" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="BcL-oM-5gB"/>
+                                    <constraint firstAttribute="width" constant="83" id="xLs-qv-4bU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自驾车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvN-7U-gGE">
+                                <rect key="frame" x="232" y="361" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refueling_maintenance" translatesAutoresizingMaskIntoConstraints="NO" id="CdN-L7-cC0">
+                                <rect key="frame" x="76" y="400" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="6QO-ao-jfH"/>
+                                    <constraint firstAttribute="width" constant="83" id="YFi-yQ-vu7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加油站" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAN-SR-oxa">
+                                <rect key="frame" x="91.5" y="494" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-tQ-ovN">
+                                <rect key="frame" x="216" y="400" width="83" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="1Sk-YG-lkb"/>
+                                    <constraint firstAttribute="height" constant="94" id="j4F-Fb-AwF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-y8-PaG">
+                                <rect key="frame" x="240" y="494" width="35" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27362756617346856" green="0.49265595772251791" blue="0.57998046874999998" alpha="0.59957005033557043" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CdN-L7-cC0" firstAttribute="top" secondItem="Lbo-Nx-hok" secondAttribute="bottom" constant="18" id="0Dq-44-emQ"/>
+                            <constraint firstItem="irV-1b-8QP" firstAttribute="top" secondItem="ooN-p2-KnN" secondAttribute="bottom" constant="20" id="0iw-bl-icS"/>
+                            <constraint firstItem="mAN-SR-oxa" firstAttribute="top" secondItem="CdN-L7-cC0" secondAttribute="bottom" id="5Ls-sv-3W7"/>
+                            <constraint firstItem="mAN-SR-oxa" firstAttribute="centerX" secondItem="CdN-L7-cC0" secondAttribute="centerX" id="8bO-8X-ktd"/>
+                            <constraint firstItem="irV-1b-8QP" firstAttribute="centerY" secondItem="DZ7-DT-QYL" secondAttribute="centerY" constant="-20" id="BzO-A0-sxZ"/>
+                            <constraint firstItem="irV-1b-8QP" firstAttribute="centerX" secondItem="DZ7-DT-QYL" secondAttribute="centerX" constant="70" id="HRM-5u-8om"/>
+                            <constraint firstItem="IkP-y8-PaG" firstAttribute="centerX" secondItem="hXe-tQ-ovN" secondAttribute="centerX" id="RLI-lN-Sbl"/>
+                            <constraint firstItem="Qhl-co-OBl" firstAttribute="centerX" secondItem="DZ7-DT-QYL" secondAttribute="centerX" constant="-70" id="Ty3-7B-OgL"/>
+                            <constraint firstItem="ooN-p2-KnN" firstAttribute="centerX" secondItem="OVf-aG-bwk" secondAttribute="centerX" id="Ui2-sb-gF9"/>
+                            <constraint firstItem="CdN-L7-cC0" firstAttribute="centerX" secondItem="Qhl-co-OBl" secondAttribute="centerX" id="X0i-k0-K9s"/>
+                            <constraint firstItem="Qhl-co-OBl" firstAttribute="top" secondItem="kNn-Xh-Uuh" secondAttribute="bottom" constant="20" id="bg8-nT-p0O"/>
+                            <constraint firstItem="Qhl-co-OBl" firstAttribute="centerY" secondItem="DZ7-DT-QYL" secondAttribute="centerY" constant="-20" id="bpg-rj-Kqn"/>
+                            <constraint firstItem="xY5-8q-jtO" firstAttribute="leading" secondItem="DZ7-DT-QYL" secondAttribute="leading" id="cLP-X5-kJ9"/>
+                            <constraint firstItem="pUV-Xq-188" firstAttribute="centerX" secondItem="Qhl-co-OBl" secondAttribute="centerX" id="cgK-hy-h8F"/>
+                            <constraint firstItem="kNn-Xh-Uuh" firstAttribute="top" secondItem="pUV-Xq-188" secondAttribute="bottom" id="f03-Wa-tsK"/>
+                            <constraint firstItem="kNn-Xh-Uuh" firstAttribute="centerX" secondItem="pUV-Xq-188" secondAttribute="centerX" id="frA-kC-qfV"/>
+                            <constraint firstItem="OVf-aG-bwk" firstAttribute="centerX" secondItem="irV-1b-8QP" secondAttribute="centerX" id="lct-94-Zwa"/>
+                            <constraint firstItem="wAR-5q-mkr" firstAttribute="top" secondItem="xY5-8q-jtO" secondAttribute="bottom" constant="10" id="o3b-7e-dGG"/>
+                            <constraint firstItem="Lbo-Nx-hok" firstAttribute="centerX" secondItem="Qhl-co-OBl" secondAttribute="centerX" id="oLy-Uu-PTB"/>
+                            <constraint firstItem="hXe-tQ-ovN" firstAttribute="centerX" secondItem="irV-1b-8QP" secondAttribute="centerX" id="qMD-ah-Ba4"/>
+                            <constraint firstItem="LvN-7U-gGE" firstAttribute="centerX" secondItem="irV-1b-8QP" secondAttribute="centerX" id="qTw-lo-N85"/>
+                            <constraint firstItem="LvN-7U-gGE" firstAttribute="top" secondItem="irV-1b-8QP" secondAttribute="bottom" id="qXC-49-Szs"/>
+                            <constraint firstItem="Lbo-Nx-hok" firstAttribute="top" secondItem="Qhl-co-OBl" secondAttribute="bottom" id="qh8-3v-eJC"/>
+                            <constraint firstItem="IkP-y8-PaG" firstAttribute="top" secondItem="hXe-tQ-ovN" secondAttribute="bottom" id="r3U-ql-jt2"/>
+                            <constraint firstItem="ooN-p2-KnN" firstAttribute="top" secondItem="OVf-aG-bwk" secondAttribute="bottom" id="trD-nb-DkR"/>
+                            <constraint firstAttribute="trailing" secondItem="xY5-8q-jtO" secondAttribute="trailing" id="vXD-JM-eeK"/>
+                            <constraint firstItem="hXe-tQ-ovN" firstAttribute="top" secondItem="LvN-7U-gGE" secondAttribute="bottom" constant="18" id="xs5-w6-R9s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img_bus" destination="Qhl-co-OBl" id="zSn-3l-WAB"/>
+                        <outlet property="img_businessCar" destination="pUV-Xq-188" id="pkh-RV-EAb"/>
+                        <outlet property="img_gasStation" destination="CdN-L7-cC0" id="KTq-0c-QSS"/>
+                        <outlet property="img_selfDrive" destination="irV-1b-8QP" id="lxO-80-9U1"/>
+                        <outlet property="img_service" destination="hXe-tQ-ovN" id="h1p-Zk-NvV"/>
+                        <outlet property="img_taxi" destination="OVf-aG-bwk" id="O1o-Jv-e2f"/>
+                        <outlet property="l_bus" destination="Lbo-Nx-hok" id="ZB1-Ka-VdD"/>
+                        <outlet property="l_businessCar" destination="kNn-Xh-Uuh" id="Op2-ga-VEE"/>
+                        <outlet property="l_gasStation" destination="mAN-SR-oxa" id="KJb-cr-AxA"/>
+                        <outlet property="l_selfDrive" destination="LvN-7U-gGE" id="hA3-be-GZz"/>
+                        <outlet property="l_service" destination="IkP-y8-PaG" id="Hev-UI-rig"/>
+                        <outlet property="l_taxi" destination="ooN-p2-KnN" id="Ik3-Rj-FUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20b-nM-ksQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0hb-Nw-bV7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" toolbarHidden="NO" id="MaM-MK-MAc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SPh-5d-dMG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="L9d-wC-AOu">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JX2-uw-PSJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1z-jt-tAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="business_car" width="45" height="45"/>
+        <image name="refueling_maintenance" width="45" height="45"/>
+        <image name="service" width="45" height="45"/>
+        <image name="taxi" width="45" height="45"/>
+        <image name="travel_around" width="45" height="45"/>
+        <image name="travel_car" width="45" height="45"/>
+    </resources>
+</document>
